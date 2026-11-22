@@ -6,7 +6,12 @@ export const auth = betterAuth({
 
     emailAndPassword: {
         enabled: true
-    }
+    },
+    
+    trustedOrigins: [
+        "http://localhost:3000",
+        "https://photo-vault-w8ji-jade.vercel.app/",
+    ],
 })
 
 
