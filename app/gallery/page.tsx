@@ -13,7 +13,7 @@ import Router from "next/navigation"
 import Link from "next/link"
 import tick from '../../public/tick-svgrepo-com.svg'
 import PhotoCard from "@/components/PhotoCard/PhotoCard"
-import GalleryGrid from "@/components/GalleryGrid/GalleryGrid"
+
 import GalleryClient from "@/components/GalleryClient/GalleryClient"
 
 export default async function GalleryPage(){
