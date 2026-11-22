@@ -1,0 +1,92 @@
+
+
+.confirm_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 360px;
+    box-shadow: 0px 3px 5px 0px rgba(77, 77, 77, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.confirm_box h4{
+    margin: 0;
+}
+
+
+
+.icon{
+    background-color: rgb(194, 176, 153);
+    width: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(177, 49, 49);
+    height: 40px;
+   
+    border-radius: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.confirm_box p{
+    margin: 0;
+    margin-top: 6px;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.empty_button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.cancel_button{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(91, 91, 91);
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.cancel_button:hover{
+    color: white;
+    background-color: var(--theme-color);
+}
+
+.empty_button:hover{
+    background-color: rgb(143, 19, 44);
+
+}
+.button_container{
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.load{
+    display: flex;
+    gap: 7px;
+    
+    align-items: center;
+}

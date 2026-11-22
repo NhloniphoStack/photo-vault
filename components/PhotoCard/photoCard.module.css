@@ -1,0 +1,56 @@
+
+.tick_container{
+    background-color: gainsboro;
+    width: 20px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.tick_container:hover{
+    background-color: var(--theme-color);
+}
+
+.tick_container img{
+    width: 100%;
+}
+
+.tick{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.photo_card{
+    width: 100%;
+    position: relative;
+}
+
+.photo_card a{
+    width: 100%;
+}
+
+
+
+.photo{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2.6/3;
+    box-shadow: 0px 3px 5px 0px rgba(77, 77, 77, 0.5);
+    border-radius:20px;
+   
+}
+
+.photo:hover{
+    opacity: 0.7;
+}
+
+.star{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 10;
+}

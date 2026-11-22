@@ -1,0 +1,52 @@
+
+.delete_card{
+      width: 100%;
+    position: relative;
+     box-shadow: 0px 3px 5px 0px rgba(77, 77, 77, 0.4);
+    border-radius: 10px;
+}
+
+.delete_photo_card{
+   width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    aspect-ratio: 2/2;
+  
+   
+}
+
+.delete_card_layout{
+    margin-top: 10px;
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px
+}
+
+.delete_button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete_button:hover{
+    background-color: rgb(188, 188, 188);
+    border-radius: 5px;
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.restore_button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.restore_button:hover{
+    background-color: rgb(188, 188, 188);
+    border-radius: 5px;
+}

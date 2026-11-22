@@ -1,0 +1,72 @@
+
+.account_icon_container{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 158, 160, 0.4);
+    color:  rgb(95, 158, 160);
+    font-weight: 600;
+    text-align: center;
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+.menu ul{
+    list-style: none;
+    padding: 6px 4px;
+   background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(99, 99, 99, 0.4);
+}
+
+.menu li{
+    min-width: 110px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu li:hover{
+   background-color: rgba(216, 112, 147, 0.6);
+   color: rgba(216, 112, 147);
+   font-weight: 600;
+   border-radius: 5px;
+}
+
+.menu{
+    position: absolute;
+    right: 5%;
+    animation: slide-menu 0.8s ease-in-out;
+}
+
+@keyframes slide-menu{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.logout_button{
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    width: 100%;
+     cursor: pointer;
+}
+
+.logout_button:hover{
+    color: rgb(192, 49, 96);
+   font-weight: 600;
+
+}

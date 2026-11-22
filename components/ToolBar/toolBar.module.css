@@ -1,0 +1,86 @@
+
+.select_box p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.select_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--theme-color);
+    background-color: #E8F0FE;
+    padding: 10px;
+    animation: slide 0.3s ease-in;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delete_button{
+    background-color: #F5E1DF;
+    color: #DC6058;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+}
+
+.delete_button:hover{
+    background-color: #eca59f;
+}
+
+.favorite_button{
+    background-color: #ffffff;
+    color: black;
+    
+    border: 1px solid rgb(182, 182, 182);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+}
+
+.favorite_button:hover{
+    background-color: goldenrod;
+}
+
+.unfavorite_button{
+     background-color: #a3a3a3;
+    color: rgb(89, 57, 57);
+    
+    border: 1px solid rgb(182, 182, 182);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+}
+
+@keyframes slide{
+    from {
+        opacity: 0;
+        transform: translateY(-05px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.load{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.button_container{
+    display: flex;
+    gap: 5px;
+}

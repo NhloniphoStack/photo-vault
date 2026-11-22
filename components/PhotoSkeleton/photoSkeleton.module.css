@@ -1,0 +1,31 @@
+
+
+.photo_skeleton{
+     width: 100%;
+    object-fit: cover;
+  aspect-ratio: 2.6/3;
+    border-radius: 20px;
+    background-color: #9f9f9f;
+    
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+.card_skeleton{
+    width: 100%;
+}
+
+@keyframes skeleton-loading{
+  0% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+
+}

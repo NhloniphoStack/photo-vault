@@ -1,0 +1,33 @@
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.title{
+     width: 90px;
+     height: 24px;
+     border-radius: 10px;
+     margin-top: 10px;
+     background-color: #9f9f9f;
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-loading{
+  0% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+
+}

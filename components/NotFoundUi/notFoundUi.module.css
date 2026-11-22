@@ -1,0 +1,43 @@
+
+
+.not_found_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 116px;
+}
+
+
+.not_found_container h2{
+    margin: 0;
+}
+
+.not_found_container p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(94, 94, 94);
+    margin-top: 4px;
+    margin-bottom: 7px;
+}
+
+.home_button{
+    color: white;
+    background-color: var(--theme-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.home_button:hover{
+    background-color: var(--light-color);
+}
+
+.not_found_container span{
+    color: var(--theme-color);
+    font-weight: 600;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+}

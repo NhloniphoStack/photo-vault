@@ -1,0 +1,25 @@
+
+:root{
+  --background-color: #fff;
+  --theme-color: #1A73E7;
+  --light-color:  #1656a9;
+}
+
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+
+
+body{
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--background-color);
+}
+
+button, input, textarea{
+  font-family: var(--font-sans);
+}

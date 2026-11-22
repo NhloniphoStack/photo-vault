@@ -1,0 +1,273 @@
+
+
+.drop_zone{
+    border: 2px dashed var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:  rgba(26, 115, 231, 0.1);
+}
+
+.arrow_icon{
+   max-width: 60px;
+   max-height: 50px;
+}
+
+.file_button{
+    background-color: var(--theme-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.file_button:hover{
+    background-color: var(--light-color);
+}
+
+.upload_container{
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.photo-preview img{
+    width: 100%;
+    object-fit: cover;
+    height: 235px;
+    border-radius: 20px;
+    max-width: 350px;
+    margin-top: 10px;
+   
+}
+
+.photo-preview{
+    background-color:  rgba(26, 115, 231, 0.1);
+    padding: 10px;
+    display: flex;
+      border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    animation: smooth 0.6s ease-in-out;
+}
+
+@keyframes smooth {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+         opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.metadata img{
+    width: 35px;
+    object-fit: cover;
+  height: 35px;
+    
+    border-radius: 10px;
+}
+
+.metadata{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.small_preview{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+}
+
+.metadata h5{
+     margin: 0;
+}
+
+.metadata p{
+    margin: 0;
+}
+
+.change_button{
+    font-size: 0.7rem;
+    border: none;
+    width: 160px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+.change_button:hover{
+    color: black;
+}
+
+.upload_button{
+    background-color: var(--theme-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.upload_button:hover{
+    background-color: var(--light-color);
+}
+
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.upload_layout{
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.file_name{
+      display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 1;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.info p{
+    text-align: start;
+}
+
+.error_container p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.error_container{
+    height: 30px;
+    
+    background-color:#f4afaf;
+    color: #cf4b4b;
+    margin-top: 10px;
+     margin-bottom: 10px;
+    padding: 10px;
+     animation: slide 0.6s ease-in-out;
+    border-radius: 10px;
+   
+}
+
+.progress_bar{
+    background-color: rgb(131, 131, 131);
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    max-width: 350px;
+    border-radius: 10px;
+   
+}
+
+.progress_bar::after{
+    content: "";
+    display: block;
+    width: 35%;
+    height: 100%;
+    background-color: var(--theme-color);
+    animation: loading 1.5s ease-in-out infinite;
+
+}
+
+.uploading_text{
+    display: flex;
+    justify-content: end;
+    color:  #006eff;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.uploading_text p{
+    margin: 0;
+}
+
+.loading_container{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+     animation: slide 0.6s ease-in-out;
+}
+
+.pending_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     max-width: 350px;
+      animation: slide 0.6s ease-in-out;
+}
+
+.results_container{
+    height: 30px;
+   
+    background-color:#E6F4EA;
+    color: #1C783B;
+    margin-top: 10px;
+    width: 100%;
+    text-align: start;
+     margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    max-width: 350px;
+    animation: slide 0.6s ease-in-out;
+    border-radius: 20px;
+}
+
+.results_container p{
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.results_container a{
+    text-decoration: none;
+    color: #1C783B;
+    text-decoration: underline;
+}
+
+
+@keyframes slide{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes loading {
+
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(300%);
+    }
+    
+}
